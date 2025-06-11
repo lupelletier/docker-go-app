@@ -1,0 +1,20 @@
+# Ignore environment files
+.env
+
+# Ignore git and editor files
+.git
+.gitignore
+.vscode
+.idea
+
+# Ignore build output and binaries
+app
+*.out
+*.exe
+*.test
+
+# Ignore local database and Docker volumes
+pgdata
+
+# Ignore OS files
+.DS_Store
