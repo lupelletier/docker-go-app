@@ -47,15 +47,15 @@ func initDB() (*pgxpool.Pool, error) {
 		dbName = "postgres"
 	}
 
-	config, err := pgx.ParseConfig(
-		fmt.Sprintf(
-			"postgres://%s:%s@%s:%s/%s?sslmode=disable",
-			dbUser, dbPassword, dbHost, dbPort, dbName,
-		),
-	)
-	if err != nil {
-		return nil, err
-	}
+	// config, err := pgx.ParseConfig(
+	// 	fmt.Sprintf(
+	// 		"postgres://%s:%s@%s:%s/%s?sslmode=disable",
+	// 		dbUser, dbPassword, dbHost, dbPort, dbName,
+	// 	),
+	// )
+	// if err != nil {
+	// 	return nil, err
+	// }
 
 	ctx, cancel := context.WithTimeout(
 		context.Background(), dbConnectionTimeout,
