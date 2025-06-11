@@ -34,5 +34,10 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
+# Unnecessary networks definition because Docker Compose creates a default network
+# networks:
+#   default:
+#     driver: bridge
 volumes:
   pgdata:
