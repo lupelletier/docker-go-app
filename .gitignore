@@ -1,0 +1,19 @@
+# Binaries
+/app
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Environment and config
+.env
+
+# Docker
+pgdata/
